@@ -24,10 +24,10 @@ check_errors = pygame.init()
 # pygame.init() example output -> (6, 0)
 # second number in tuple gives number of errors
 if check_errors[1] > 0:
-    print(f'[!] Had {check_errors[1]} errors when initialising game, exiting...')
+    print(f'[!] Had {check_errors[1]} errors when initializing game, exiting...')
     sys.exit(-1)
 else:
-    print('[+] Game successfully initialised')
+    print('[+] Game successfully initialized')
 
 
 # Initialise game window
@@ -121,13 +121,13 @@ while True:
 
     # Moving the snake
     if direction == 'UP':
-        snake_pos[1] -= 1
+        snake_pos[1] -= 10
     if direction == 'DOWN':
-        snake_pos[1] += 1
+        snake_pos[1] += 10
     if direction == 'LEFT':
-        snake_pos[0] -= 1
+        snake_pos[0] -= 10
     if direction == 'RIGHT':
-        snake_pos[0] += 1
+        snake_pos[0] += 10
 
     # Snake body growing mechanism
     snake_body.insert(0, list(snake_pos))

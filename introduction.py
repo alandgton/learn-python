@@ -126,3 +126,7 @@ def say_hello():
 #else:
 #    print("n is large")
 # What do you think the above code will print?
+
+# Loops
+# while-loops
+# Allow you to repeat a chunk of code as long as a condition is True
